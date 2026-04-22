@@ -1,0 +1,77 @@
+{
+  "title": "SUPPORT2 Audited Survival Benchmark: Principled Audit, Corrected Baselines, LODGO Transportability, and Open Reference Pipeline",
+  "description": "<p>Reproducible pipeline and full codebase accompanying the manuscript &quot;Hidden Leakage in SUPPORT2 Survival Benchmarks: A Principled Audit, Corrected Baselines, and Open Reference Pipeline&quot; (PLOS ONE, 2026). This release (v1.0) provides (i) a three-layer leakage audit of all 47 SUPPORT2 variables, (ii) bootstrap-validated baselines for four survival models on the audited feature set (GBM C-index = 0.7052, 95% CI 0.6861&ndash;0.7230), (iii) a leave-one-disease-group-out (LODGO) cross-validation benchmark across all eight diagnostic groups with bootstrap confidence intervals (mean C = 0.637, mean &Delta;C = &minus;0.068 vs primary), (iv) a complete resumable pipeline with stage-based checkpointing and per-run manifest files, and (v) quickstart notebooks and smoke tests for downstream adoption. The SUPPORT2 dataset (9,105 ICU/hospital patients from Knaus 1995) is bundled to enable one-command reproduction of every figure and table in the paper.</p>",
+  "creators": [
+    {
+      "name": "Truong, Quynh Hoa",
+      "affiliation": "Clevix LLC, Hanoi, Vietnam",
+      "orcid": ""
+    },
+    {
+      "name": "Hoang, Dinh Cuong",
+      "affiliation": "Clevix LLC, Hanoi, Vietnam",
+      "orcid": ""
+    },
+    {
+      "name": "Luu, Duc Trung",
+      "affiliation": "Clevix LLC, Hanoi, Vietnam",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "SUPPORT2",
+    "survival analysis",
+    "data leakage",
+    "feature audit",
+    "clinical benchmark",
+    "reproducibility",
+    "gradient boosting survival",
+    "concordance index",
+    "decision curve analysis",
+    "SHAP",
+    "leave-one-group-out cross-validation",
+    "transportability",
+    "ICU mortality prediction",
+    "Knaus 1995",
+    "scikit-survival"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ClevixLab/support2-survival",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.1371/journal.pone.XXXXXXX",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://hbiostat.org/data/",
+      "relation": "references",
+      "resource_type": "dataset"
+    }
+  ],
+  "references": [
+    "Knaus WA, Harrell FE Jr, Lynn J, et al. The SUPPORT prognostic model: Objective estimates of survival for seriously ill hospitalized adults. Ann Intern Med. 1995;122(3):191-203.",
+    "Harrell FE Jr. Regression Modeling Strategies. 2nd ed. Springer; 2015.",
+    "P&ouml;lsterl S. scikit-survival: A Library for Time-to-Event Analysis Built on Top of scikit-learn. JMLR 2020;21(212):1-6."
+  ],
+  "grants": [],
+  "communities": [
+    {"identifier": "plos"}
+  ],
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Harrell, Frank E. Jr.",
+      "type": "DataCurator",
+      "affiliation": "Vanderbilt University Medical Center"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# SUPPORT2 Audited Survival Pipeline — dependencies (v1.0 release, pinned)
+# =========================================================================
+# These version pins correspond to the exact environment used to produce
+# the numbers in the paper (Table 2: GBM C-index = 0.7052). Exact pins are
+# required to reproduce bootstrap CIs to the 4th decimal; looser ranges
+# may produce small numerical differences within CI width.
+#
+# Tested on Python 3.11 and 3.12 (Linux, Windows, macOS).
+
+# ─── Core numerical / data ────────────────────────────────────────────────────
+numpy>=1.26,<2.0           # sksurv 0.22 requires numpy < 2
+pandas>=2.0,<3.0
+scipy>=1.11,<2.0
+
+# ─── Machine learning / survival ──────────────────────────────────────────────
+scikit-learn>=1.3,<1.4     # sksurv 0.22 pins to this range
+scikit-survival==0.22.2    # paper reference version — pin to match reported C-indices
+joblib>=1.3,<2.0
+
+# ─── Survival utilities ───────────────────────────────────────────────────────
+lifelines>=0.27,<0.29
+
+# ─── Explainability ───────────────────────────────────────────────────────────
+shap>=0.44,<0.50
+
+# ─── Plotting ─────────────────────────────────────────────────────────────────
+matplotlib>=3.7,<4.0
+Pillow>=10.0               # for TIFF export at 300 DPI
+
+# ─── Parquet support for LODGO fold artifact preservation ─────────────────────
+pyarrow>=14.0              # used by LODGO script to save per-fold arrays
+
+# ─── Optional: GPU-capable XGBoost survival (supplementary model) ─────────────
+# Uncomment to enable; requires CUDA runtime on the machine for GPU use.
+# xgboost>=2.0,<3.0
+
+# ─── Optional: torch for GPU detection (any version >= 2.0, CPU build is fine) ─
+# Uncomment if you want automatic GPU detection.
+# torch>=2.0,<3.0

@@ -1,0 +1,64 @@
+cff-version: 1.2.0
+title: >-
+  SUPPORT2 Audited Survival Benchmark:
+  Principled Audit, Corrected Baselines, LODGO Transportability,
+  and Open Reference Pipeline
+message: "If you use this software, please cite both the paper and the software release (DOI below)."
+type: software
+authors:
+  - given-names: Truong Quynh
+    family-names: Hoa
+    email: hoa@clevix.vn
+    affiliation: "H&K Research Studio, Clevix LLC, Hanoi, Vietnam"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - given-names: Hoang Dinh
+    family-names: Cuong
+    email: hoangdinhcuong@timhanoi.vn
+    affiliation: "Department of Cardiology, Hanoi Heart Hospital, Hanoi, Vietnam"
+  - given-names: Luu Duc
+    family-names: Trung
+    email: trung.ld@clevix.vn
+    affiliation: "H&K Research Studio, Clevix LLC, Hanoi, Vietnam"
+repository-code: "https://github.com/ClevixLab/support2-survival"
+url: "https://github.com/ClevixLab/support2-survival"
+license: MIT
+version: "1.0.0"
+date-released: "2026-04-22"
+# After the first GitHub Release triggers a Zenodo archive, fill in the DOI below:
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.XXXXXXX"
+    description: "Zenodo archive for v1.0.0 (update after first GitHub Release)"
+keywords:
+  - survival analysis
+  - data leakage audit
+  - feature leakage
+  - gradient boosting
+  - SUPPORT2
+  - Knaus 1995
+  - intensive care
+  - mortality prediction
+  - concordance index
+  - decision curve analysis
+  - SHAP
+  - leave-one-disease-group-out
+  - internal-external validation
+  - transportability
+  - reproducible research
+preferred-citation:
+  type: article
+  title: >-
+    Hidden Leakage in SUPPORT2 Survival Benchmarks:
+    A Principled Audit, Corrected Baselines, and Open Reference Pipeline
+  authors:
+    - given-names: Truong Quynh
+      family-names: Hoa
+    - given-names: Hoang Dinh
+      family-names: Cuong
+    - given-names: Luu Duc
+      family-names: Trung
+  journal: "PLOS ONE"
+  year: 2026
+  month: 4
+  doi: "10.1371/journal.pone.XXXXXXX"
+  url: "https://doi.org/10.1371/journal.pone.XXXXXXX"

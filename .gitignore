@@ -1,0 +1,24 @@
+# Dataset - bundled with Zenodo archive, not GitHub
+# Per Harrell hbiostat policy, dataset is redistributed via Zenodo DOI only.
+# Users of this repo should run: python download_data.py
+data/support2_full.csv
+
+# Runtime artifacts
+runs/
+temp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Testing
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
